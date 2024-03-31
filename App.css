@@ -1,0 +1,130 @@
+/* App.css */
+
+/* Set background image */
+.bg {
+  background-image: url("https://i.ibb.co/xDqbYQf/Banner.jpg");
+  background-size: cover;
+  object-fit: contain;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.804);
+}
+
+/* Recommended events container */
+.recommended-events-container {
+  margin-bottom: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  color: white;
+  overflow: hidden;
+  margin-left: 50px;
+  margin-right: 50px;
+
+}
+
+.content{
+  text-align: center;
+}
+
+.recommended-events-container h2 {
+  margin-bottom: 70vh;
+  color: #1E2022;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  overflow: hidden;
+  
+
+}
+div h1{
+  color: #ffffff;
+}
+.recommended-events {
+  display: flex;
+  overflow-x: auto;
+  margin: auto;
+  gap: 20px;
+  width: 80%;
+}
+
+.event-card {
+  width: 200px;
+  border: 1px solid #B0BABF;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.event-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.event-card h3 {
+  color: #1E2022;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.event-card p {
+  color: #989090;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Upcoming events container */
+.upcoming-events-container{
+  display: flex;
+  color: #1E2022;
+
+}
+.upcoming-events-container h2 {
+  color: #1E2022;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  
+  
+}
+.upcoming-events{
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  margin: 30px;
+  padding: 40px;
+  justify-content: space-around;
+}
+
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .recommended-events {
+    flex-wrap: nowrap;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  .event-card {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .event-card {
+    width: 100%;
+  }
+}
